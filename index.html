@@ -1,11 +1,133 @@
+Aqui está um exemplo de um site simples com HTML e CSS embutido para um site sobre medicina veterinária:
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clínica Veterinária - Cuidando de Seu Melhor Amigo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .service, .about, .contact {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+        }
+
+        .service h2, .about h2, .contact h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    <h1>Bem-vindo à Clínica Veterinária!</h1>
+    <p>Cuidados especializados para o seu melhor amigo</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre</a>
+    <a href="#services">Serviços</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<div class="main-content">
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma clínica veterinária dedicada ao cuidado de todos os tipos de animais. Com profissionais experientes e apaixonados pela medicina veterinária, garantimos tratamentos eficazes e um atendimento de qualidade.</p>
+    </section>
+
+    <section id="services" class="service">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Consultas gerais</li>
+            <li>Vacinação</li>
+            <li>Emergências veterinárias</li>
+            <li>Exames laboratoriais</li>
+            <li>Cirurgias</li>
+            <li>Controle de parasitas</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Nosso endereço:</p>
+        <p>Rua das Pet Shops, 123, Centro, Cidade - Estado</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Email: contato@clinicaveterinaria.com.br</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Clínica Veterinária. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
